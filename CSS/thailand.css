@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400&display=swap');
+
+body {
+  font-family: "Montserrat","Helvetica","Arial",sans-serif;
+  line-height: 1.5;
+  display: grid;
+  margin: 0 auto;
+  max-width: 960px;
+  grid-gap: 20px;
+  color: #222;
+}
+
+header {
+  background-color: #00205B;
+  color: #fff;
+  grid-column: 1/-1;
+  padding: 20px 20px 0px 20px;
+  font-size: 24px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 50;
+  top: 0px;
+  background-color: #00205B;
+  grid-column: 1/-1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -20px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  color: #fff;
+  padding: 0 40px;
+  margin: 0px;
+}
+
+nav > ul > li {
+  padding: 2px 20px;
+  border-left: 2px solid #00205B;
+  border-right: 2px solid #00205B;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+a.navigation:link {
+  color: #fff;
+  text-decoration: none
+}
+
+a.navigation:visited {
+  color: #aaa;
+}
+
+a.navigation:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+main {
+  display: grid;
+  grid-gap: 45px;
+  grid-template-areas:
+    "fact-sheet intro"
+    "fact-sheet geography"
+    "people people"
+    "gov gov";
+  grid-template-columns: 2fr 3fr;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 50ch;
+}
+
+#intro{
+  grid-area: intro;
+}
+
+#fact-sheet {
+  grid-area: fact-sheet;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#fact-sheet figcaption,
+#fact-sheet p {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+#geography {
+  grid-area: geography;
+}
+
+#people-society {
+  grid-area: people;
+  position: static;
+}
+
+#people-society table:first-child {
+  float: right;
+  position: relative;
+  bottom: 120px;
+  margin-right: 30px;
+  margin-bottom: -90px;
+}
+
+#government {
+  grid-area: gov;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "gov gov gov"
+    "structure capital citizenship";
+}
+
+#government h2 {
+  grid-area: gov;
+  margin-bottom: 0px;
+}
+
+#structure {
+  grid-area: structure;
+  margin-top: 0px;
+}
+
+#capital {
+  grid-area: capital;
+  margin-top: 0px;
+}
+
+#citizenship {
+  grid-area: citizenship;
+  margin-top: 0px;
+}
+
+a.main.link {
+  color: #00205B;
+}
+
+a.main:visited {
+
+}
+
+a.main:hover {
+
+}
+
+h2 {
+  border-bottom: 1px solid #222;
+}
+
+figcaption {
+  font-size: 11px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+table {
+  border: 1px solid #00205B;
+  padding: 2px;
+  border-collapse: collapse;
+  z-index: 10;
+}
+
+table caption {
+  margin-bottom: 10px;
+}
+
+td,th {
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.table-alt {
+  background-color: #ddd;
+}
+
+footer {
+  grid-column: 1/-1;
+  background-color: #eee;
+  text-align: center;
+  font-family: "Red-Hat-Mono","Courier-New",monospace;
+}
+
+footer p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
