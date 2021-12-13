@@ -99,6 +99,10 @@ a.navigation:hover {
   text-decoration: underline;
 }
 
+a.navigation:active {
+  color: #AA4A44;
+}
+
 #home h1 {
   margin-top: 0;
   margin-bottom: 0;
@@ -304,7 +308,15 @@ a.footer:link {
   text-decoration: none
 }
 
+a.footer:visited {
+  color: #add8e6;
+}
+
 a.footer:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+a.footer:active {
+  color: #AA4A44;
 }
